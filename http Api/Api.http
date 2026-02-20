@@ -1,0 +1,177 @@
+@Api_HostAddress = http://localhost:5233
+
+###
+# Customers
+GET {{Api_HostAddress}}/api/customers
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/customers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "phone": "555-0100"
+}
+
+###
+
+GET {{Api_HostAddress}}/api/customers/{{customerId}}
+Accept: application/json
+
+###
+
+# Accounts
+GET {{Api_HostAddress}}/api/accounts/customer/{{customerId}}
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/accounts
+Content-Type: application/json
+Accept: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "accountType": "Savings"
+}
+
+###
+
+GET {{Api_HostAddress}}/api/accounts/{{accountId}}
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/{{accountId}}/deposit
+Content-Type: application/json
+Accept: application/json
+
+{
+  "amount": 150.00,
+  "description": "Initial deposit"
+}
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/{{accountId}}/withdraw
+Content-Type: application/json
+Accept: application/json
+
+{
+  "amount": 50.00,
+  "description": "ATM withdrawal"
+}
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/transfer
+Content-Type: application/json
+Accept: application/json
+
+{
+  "fromAccountId": "{{fromAccountId}}",
+  "toAccountId": "{{toAccountId}}",
+  "amount": 25.00,
+  "description": "Payment"
+}
+
+###
+
+# Transactions
+GET {{Api_HostAddress}}/api/transactions/account/{{accountId}}
+Accept: application/json
+
+###@Api_HostAddress = http://localhost:5233
+
+###
+# Customers
+GET {{Api_HostAddress}}/api/customers
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/customers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "phone": "555-0100"
+}
+
+###
+
+GET {{Api_HostAddress}}/api/customers/{{customerId}}
+Accept: application/json
+
+###
+
+# Accounts
+GET {{Api_HostAddress}}/api/accounts/customer/{{customerId}}
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/accounts
+Content-Type: application/json
+Accept: application/json
+
+{
+  "customerId": "{{customerId}}",
+  "accountType": "Savings"
+}
+
+###
+
+GET {{Api_HostAddress}}/api/accounts/{{accountId}}
+Accept: application/json
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/{{accountId}}/deposit
+Content-Type: application/json
+Accept: application/json
+
+{
+  "amount": 150.00,
+  "description": "Initial deposit"
+}
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/{{accountId}}/withdraw
+Content-Type: application/json
+Accept: application/json
+
+{
+  "amount": 50.00,
+  "description": "ATM withdrawal"
+}
+
+###
+
+POST {{Api_HostAddress}}/api/accounts/transfer
+Content-Type: application/json
+Accept: application/json
+
+{
+  "fromAccountId": "{{fromAccountId}}",
+  "toAccountId": "{{toAccountId}}",
+  "amount": 25.00,
+  "description": "Payment"
+}
+
+###
+
+# Transactions
+GET {{Api_HostAddress}}/api/transactions/account/{{accountId}}
+Accept: application/json
+
+###

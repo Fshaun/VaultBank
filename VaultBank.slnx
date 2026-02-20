@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Api/VaulBank.Api.csproj" />
+  <Project Path="Application/VaulBank.Application.csproj" />
+  <Project Path="Domain/VaultBank.Domain.csproj" />
+  <Project Path="Infrastructure/VaulBank.Infrastructure.csproj" />
+</Solution>
