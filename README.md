@@ -26,8 +26,9 @@ VaultBank follows Clean Architecture with the following layers:
  <h1>Features</h1>
 
  <h2>Customer Management</h2>
+ 
 - Create customer
-- View customer
+- - View customer
 - List customers
 
 <h2>Bank Account Management</h2>
