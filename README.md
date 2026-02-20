@@ -28,26 +28,30 @@ VaultBank follows Clean Architecture with the following layers:
  <h2>Customer Management</h2>
  
 - Create customer
-- - View customer
+- View customer
 - List customers
 
 <h2>Bank Account Management</h2>
+
 - Open an account (Savings, Cheque, Investment)
 - View accounts per customer
 - Freeze / Unfreeze functionality (optional extension)
 
 <h2>Transactions</h2>
+
 - Deposit
 - Withdraw
 - Transfer between accounts
 - Fully audited with transaction history
 
 <h2>Query</h2>
+
 - Get all transactions for a specific account
 
 <h1>Technologies Used</h1>
 
 <h1>Folder Structure</h1>
+
 VaultBank
  ├── Api
  │    ├── Controllers
